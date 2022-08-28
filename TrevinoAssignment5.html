@@ -1,4 +1,10 @@
 
+<!--
+Samuel Trevino
+August 29th, 2022
+MOD 5 Assignment 
+-->
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -18,7 +24,22 @@
             parseInt(document.form1.dice2.value);
             var total = parseInt(document.form1.dice1.value) +
             parseInt(document.form1.dice2.value);
-            switch(total){ }
+            
+            switch(total){ 
+                case 2:
+                    document.form1.total.value = "Snake Eyes"; /* 2 */
+                    break;
+                case 12:
+                    document.form1.total.value = "Box Cars"; /* 12 */
+                    break;
+                case 7:
+                case 11:    
+                    document.form1.total.value = "You Win"; /* 7 or 11 */
+                    break;
+                default:
+                    document.form1.total.value = total; /* All remaining values */
+                    break;
+                }
             }
         </script>
         <form name='form1'>
