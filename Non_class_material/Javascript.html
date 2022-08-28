@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Document Write
+        </title>
+    </head>
+
+    <body>
+        Document Write <br /><br />
+
+        <p id = "par_01"></p>
+
+        <p id = "par_02"></p>
+
+        <script type = "text/javascript">
+
+            document.write("Welcome to JavaScript")
+            window.alert("window alert")
+
+            // These are to reference the paragraph and will place the text in their corresponding line
+            document.getElementById("par_01").innerHTML = "First Line"
+
+            document.getElementById("par_02").innerHTML = "Second Line"
+
+        </script>
+    </body>
+</html>

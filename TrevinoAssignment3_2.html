@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang = 'en'>
+    <!--
+        Sam Trevino
+        August 15th, 2022
+        MOD 3 Assignment 
+
+    -->
+
+    <head>
+        <h1>My Story</h1>
+    </head>
+
+    <body>
+
+        <script>
+            var firstVar = "February 19th, 1986"
+            var secondVar = "fishing"
+            var thirdVar = "Fort Bragg, NC"
+            var fourthVar = "Iraq, Afghanistan, Haiti, Egypt"
+        </script>
+
+        <p>
+            I was born on <span id = "birthday">_________</span> in Utica New York. I spent most of my childhood living on Bleeker Street and Walnut Street. 
+            As a child, I enjoyed playing outside with my friends where we loved to play the game Manhunt, it is kinda like hide and go seek. 
+            My mother and father separated when I was a young child so I lived with my mom mostly and spent time with my father on the weekends. 
+            On the weekends my father loved to take me hunting and fishing where I grew an extreme dislike for <span id = "dislike">_________</span>. 
+            My mother passed away when I was 11 so I moved in with my father where he raised me till i joined the Army.
+        </p>
+        <p>
+            I joined the US Army in 2005 at the age of 19. I was stationed at <span id = "base">_________</span> where I served as a Infantryman
+            with the 82nd Airborne Division. While stationed at Fort Bragg, I deployed to many beautiful countries like <span id = "countries">
+            _________</span>. I spent nine years at Fort Bragg before I went through additional training for the job a am currently in. 
+        </p>
+
+        <p>
+            <button type = "button" onclick = "document.getElementById('birthday').innerHTML = firstVar">My Birthday</button>
+            <br/><br/>
+            <button type = "button" onclick = "document.getElementById('dislike').innerHTML = secondVar">My Dislike</button>
+            <br/><br/>
+            <button type = "button" onclick = "document.getElementById('base').innerHTML = thirdVar">First Duty Station</button>
+            <br/><br/>
+            <button type = "button" onclick = "document.getElementById('countries').innerHTML = fourthVar">Beautiful Countries</button>
+        </p>
+        
+    </body>
+</html>
